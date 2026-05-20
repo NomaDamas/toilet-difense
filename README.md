@@ -7,6 +7,10 @@
 
 **🌐 플레이 → [nomadamas.github.io/toilet-difense](https://nomadamas.github.io/toilet-difense/)**
 
+![Toilet Defense — Wave 16 보스전: 정체불명의 물질 + 콤보 ×12 + 능동 도구 발동](./assets/screenshot.png)
+
+> *Wave 16/18 메인 오수관 — 보스 HP 42%, 콤보 ×12, 김반장 출장 (F) 준비 완료. 키친타월 절대 금물.*
+
 ![5층은 죄가 없다. 사람이 키친타월을 넣는다.](https://img.shields.io/badge/%ED%82%A4%EC%B9%9C%ED%83%80%EC%9B%94-%EC%A0%88%EB%8C%80%20%EA%B8%88%EB%AC%BC-e9534b?style=for-the-badge) ![No build chain](https://img.shields.io/badge/build-none-5acf80?style=for-the-badge) ![Deps](https://img.shields.io/badge/deps-0-f6d96a?style=for-the-badge)
 
 ---
