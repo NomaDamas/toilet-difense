@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background: #0a0c12;
+  color: #e9eaf2;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Noto Sans KR", "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
+}
+
+#app {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 30% 20%, #1a2236 0%, #0a0c12 60%),
+    repeating-linear-gradient(0deg, #0e1018 0px, #0e1018 2px, transparent 2px, transparent 24px),
+    repeating-linear-gradient(90deg, #0e1018 0px, #0e1018 2px, transparent 2px, transparent 24px);
+}
+
+#game {
+  display: block;
+  background: #232a3a;
+  max-width: 100%;
+  max-height: 100%;
+  width: min(100vw, 1280px);
+  height: min(calc(100vw * 9 / 16), 100vh, 720px);
+  cursor: default;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px #2a3148;
+}
+
+#loading {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 30%, #1a2640 0%, #06080d 70%);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+  transition: opacity 600ms ease, visibility 600ms ease;
+}
+
+#loading.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loading-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.loading-logo {
+  font-size: 96px;
+  filter: drop-shadow(0 8px 30px rgba(120, 170, 255, 0.3));
+  animation: bob 2.4s ease-in-out infinite;
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.loading-title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #f3f5ff;
+}
+
+.loading-sub {
+  font-size: 14px;
+  color: #7c89a8;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.loading-tip {
+  margin-top: 24px;
+  font-size: 16px;
+  color: #f6d96a;
+  background: rgba(246, 217, 106, 0.08);
+  padding: 8px 16px;
+  border: 1px dashed #5d4f1c;
+  border-radius: 4px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 440px;
+  min-height: 36px;
+}
+
+.loading-bar {
+  width: 320px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.loading-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #4ea1ff, #f6d96a);
+  animation: load 1.6s ease-out forwards;
+}
+
+@keyframes load {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}

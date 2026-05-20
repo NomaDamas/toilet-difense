@@ -1,0 +1,39 @@
+# macOS / OS
+.DS_Store
+Thumbs.db
+
+# Dev / QA noise
+.acid*.png
+.acidp*.png
+.m1-*.png
+.m3-*.png
+live-*.png
+qa-*.png
+debug-*.png
+
+# Tool dirs
+.playwright-mcp/
+.sisyphus/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs / temp
+*.log
+/tmp/
+
+# Node (just in case)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build output (we have none, but future-proof)
+dist/
+build/
+
+# Private deploy artifacts
+backflow.zip
+*.tar.gz
