@@ -10,6 +10,7 @@
 ![5층은 죄가 없다. 사람이 키친타월을 넣는다.](https://img.shields.io/badge/%ED%82%A4%EC%B9%9C%ED%83%80%EC%9B%94-%EC%A0%88%EB%8C%80%20%EA%B8%88%EB%AC%BC-e9534b?style=for-the-badge) ![No build chain](https://img.shields.io/badge/build-none-5acf80?style=for-the-badge) ![Deps](https://img.shields.io/badge/deps-0-f6d96a?style=for-the-badge)
 
 ---
+<img width="2160" height="3840" alt="image" src="https://github.com/user-attachments/assets/bf15437f-b39d-4976-8ec7-a0f2aeba0214" />
 
 ## ❓ 어쩌다 이런 게임이
 
